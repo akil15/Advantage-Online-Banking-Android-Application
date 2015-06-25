@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_accounts"
+        android:icon="@drawable/ic_accounts"
+        android:title="@string/accounts" />
+    <item
+        android:id="@+id/menu_money_transfer"
+        android:icon="@drawable/ic_moneytransfer"
+        android:title="@string/money_transfer" />
+    <item
+        android:id="@+id/menu_brokerage"
+        android:icon="@drawable/ic_brokerage"
+        android:title="@string/brokerage" />
+    <item
+        android:id="@+id/menu_pay_bills"
+        android:icon="@drawable/ic_bills"
+        android:title="@string/pay_bills" />
+    <item
+        android:id="@+id/menu_checkdeposit"
+        android:icon="@drawable/ic_checkdeposit"
+        android:title="@string/check_deposit" />
+    <item
+        android:id="@+id/menu_help"
+        android:icon="@drawable/ic_help"
+        android:title="@string/help" />
+    <item
+        android:id="@+id/menu_branches"
+        android:icon="@drawable/ic_branches"
+        android:title="@string/branches" />
+    <item
+        android:id="@+id/menu_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/logout" />
+</menu>

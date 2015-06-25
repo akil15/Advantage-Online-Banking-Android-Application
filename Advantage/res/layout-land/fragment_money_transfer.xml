@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/moneyTransferRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:paddingTop="?android:attr/actionBarSize">
+
+    <LinearLayout
+        android:id="@+id/firstLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/transferFromTextView"
+                style="@style/custom_text_view"
+                android:text="@string/from"
+                android:textColor="@color/semi_transparent_black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/transferFromSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp">
+
+                <requestFocus />
+            </Spinner>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/transferToTextView"
+                style="@style/custom_text_view"
+                android:text="@string/to"
+
+                android:textColor="@color/semi_transparent_black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/transferToSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/secondLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/firstLinearLayout"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/transferTransferDateLabelTextView"
+                style="@style/custom_text_view"
+                android:text="@string/transfer_date"
+                android:textColor="@color/semi_transparent_black"
+                android:textSize="14sp"
+                android:layout_below="@+id/moneyTransferLinearLayout"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/transferTransferDateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/transferTransferDateLabelTextView"
+                android:minHeight="40dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/transferSumTextView"
+                style="@style/custom_text_view"
+                android:text="@string/amount"
+
+                android:textColor="#999"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/transferSumEditText"
+                style="@style/custom_edit_text"
+                android:layout_width="match_parent"
+                android:hint="@string/type_a_number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/semi_transparent_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/transferButton"
+        style="@style/custom_button"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:text="@string/transfer"
+        android:layout_below="@+id/secondLinearLayout"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/loadingRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageViewLoadingIcon"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/ImageContentDescription"
+            android:src="@drawable/loading_ring" />
+
+        <TextView
+            android:id="@+id/imageViewLoadingTitle2"
+            style="@style/ShadowTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewLoadingIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dip"
+            android:gravity="center_horizontal"
+            android:text="@string/loading_accounts"
+            android:textColor="@color/darkGray"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imageViewHeaderShadow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/ImageContentDescription"
+        android:scaleType="fitXY"
+        android:src="@drawable/header_footer" />
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/moneyTransferRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:paddingTop="?android:attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/billNameTextView"
+            style="@style/custom_text_view"
+            android:text="@string/bill"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"/>
+
+    <ImageView
+        android:id="@+id/billPayeeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/billNameTextView"
+        android:layout_alignTop="@+id/billNameTextView"
+        android:layout_alignBottom="@+id/billNameTextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/ImageContentDescription"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+            android:id="@+id/billImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_image"
+            android:layout_margin="8dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/ImageContentDescription"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/billNameTextView"
+            android:layout_above="@+id/transferFromTextView"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/transferFromTextView"
+            style="@style/custom_text_view"
+            android:text="@string/from"
+            android:textColor="@color/semi_transparent_black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:layout_above="@+id/payFromFromSpinner"/>
+
+        <Spinner
+            android:id="@+id/payFromFromSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:layout_margin="8dp"
+            android:layout_above="@+id/transferSumTextView">
+
+            <requestFocus />
+        </Spinner>
+
+        <TextView
+            android:id="@+id/transferSumTextView"
+            style="@style/custom_text_view"
+            android:text="@string/amount"
+            android:textColor="#999"
+            android:textSize="14sp"
+            android:textStyle="bold"
+
+            android:layout_margin="8dp"
+            android:layout_above="@+id/billAmountTextView"/>
+
+        <TextView
+            android:id="@+id/billAmountTextView"
+            style="@style/custom_edit_text"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_margin="8dp"
+            android:textColorHint="@color/semi_transparent_black"
+
+            android:layout_above="@+id/payBillButton"/>
+
+        <Button
+            android:id="@+id/payBillButton"
+            style="@style/custom_button"
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:text="@string/pay_bill"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"/>
+
+
+    <RelativeLayout
+        android:id="@+id/loadingRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageViewLoadingIcon"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/ImageContentDescription"
+            android:src="@drawable/loading_ring" />
+
+        <TextView
+            android:id="@+id/imageViewLoadingTitle2"
+            style="@style/ShadowTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewLoadingIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dip"
+            android:gravity="center_horizontal"
+            android:text="@string/loading_accounts"
+            android:textColor="@color/darkGray"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imageViewHeaderShadow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/ImageContentDescription"
+        android:scaleType="fitXY"
+        android:src="@drawable/header_footer" />
+
+</RelativeLayout>

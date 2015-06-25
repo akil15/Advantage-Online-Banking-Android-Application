@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLinearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/menuHeaderPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_header_repeat"
+        android:contentDescription="@string/ImageContentDescription"
+        android:scaleType="fitCenter"
+        android:src="@null" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/item_bg_repeat">
+
+        <ImageView
+            android:id="@+id/menuItemImageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="4dp"
+            android:contentDescription="@string/ImageContentDescription"
+            android:scaleType="fitStart" />
+
+        <TextView
+            android:id="@+id/menuItemTextView"
+            style="@style/custom_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:layout_toRightOf="@+id/menuItemImageView"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="1"
+            android:textColor="#222" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/menuFooterPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_footer"
+        android:contentDescription="@string/ImageContentDescription"
+        android:scaleType="fitCenter"
+        android:src="@null" />
+</LinearLayout>

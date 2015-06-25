@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Advantage</string>
+    <string name="app_package_name">com.hp.advantage</string>
+    <string name="crash_toast_text">Sorry!!!</string>
+    <string name="ImageContentDescription">image</string>
+    <string name="disclaimer">HP Demo Solutions Group Production</string>
+    <string name="wait_camera_message">Waiting for Camera</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- Fragments -->
+    <string name="accounts">Accounts</string>
+    <string name="money_transfer">Money transfer</string>
+    <string name="brokerage">Brokerage</string>
+    <string name="pay_bills">Pay bills</string>
+    <string name="check_deposit">Check Deposit</string>
+    <string name="help">Help</string>
+    <string name="branches">Branches</string>
+    <string name="logout">Logout</string>
+    <string name="transactions">Transactions</string>
+
+    <string name="email_for_support">Email for support</string>
+    <string name="call_for_support">Call for support</string>
+    <string name="purchase">Purchase</string>
+
+
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="login">Login</string>
+    <string name="user_name">User name</string>
+    <string name="password">Password</string>
+    <string name="call">Call for help</string>
+    <string name="loading_accounts">Loading Accounts</string>
+    <string name="loading_transactions">Loading Transactions</string>
+    <string name="loading_barcodes">Loading Barcodes</string>
+    <string name="loading_nfc_tags">Loading NFC</string>
+    <string name="from">FROM</string>
+    <string name="to">TO</string>
+    <string name="transfer">Transfer</string>
+    <string name="operation_status">Operation Status</string>
+    <string name="scan_check">Scan Check</string>
+    <string name="quotes">Get stock quotes</string>
+    <string name="scan">Scan</string>
+    <string name="nasdaq">Nasdaq</string>
+    <string name="dow">Dow</string>
+    <string name="sp500">SP500</string>
+    <string name="amount">AMOUNT</string>
+    <string name="type_a_number">Type a number</string>
+    <string name="transfer_date">Transfer date</string>
+    <string name="product">product</string>
+    <string name="pay_bill">Pay Bill</string>
+    <string name="bill">Bill</string>
+</resources>

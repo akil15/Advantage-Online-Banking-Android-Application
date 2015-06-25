@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:paddingTop="?android:attr/actionBarSize">
+
+    <LinearLayout
+        android:id="@+id/brokerageFormLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/brokerageTitleTextView"
+            style="@style/custom_text_view"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/quotes" />
+
+        <RadioGroup
+            android:id="@+id/stockExchangeRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/nasdaqRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/nasdaq" />
+
+            <RadioButton
+                android:id="@+id/dowRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dow" />
+
+            <RadioButton
+                android:id="@+id/sp500RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sp500" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/stocksEditText"
+            style="@style/custom_edit_text"
+            android:layout_width="match_parent"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/getQoutesButton"
+            style="@style/custom_button"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="@string/quotes" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/stocksListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brokerageFormLinearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:listSelector="@android:color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/loadingRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageViewLoadingIcon"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/ImageContentDescription"
+            android:src="@drawable/loading_ring" />
+
+        <TextView
+            android:id="@+id/imageViewLoadingTitle2"
+            style="@style/ShadowTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewLoadingIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dip"
+            android:gravity="center_horizontal"
+            android:text="@string/loading_accounts"
+            android:textColor="@+color/darkGray"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageViewHeaderShadow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/ImageContentDescription"
+        android:scaleType="fitXY"
+        android:src="@drawable/header_footer" />
+
+</RelativeLayout>

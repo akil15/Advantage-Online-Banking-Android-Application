@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stockLinearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:background="@null"
+    android:orientation="vertical"
+    android:paddingLeft="6dp"
+    android:paddingRight="5dp">
+
+    <ImageView
+        android:id="@+id/stockHeaderPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_header_repeat"
+        android:contentDescription="@string/ImageContentDescription"
+        android:scaleType="fitCenter"
+        android:src="@null" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_repeat">
+
+
+        <TextView
+            android:id="@+id/stockNameTextView"
+            style="@style/ShadowTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="4dp"
+            android:scrollHorizontally="false" />
+
+
+        <TextView
+            android:id="@+id/stockBidTextView"
+            style="@style/ShadowTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:scrollHorizontally="false" />
+
+        <LinearLayout
+            android:id="@+id/accountFooterSpacer"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_below="@+id/stockNameTextView"
+            android:background="@null"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/stockFooterPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_footer"
+        android:contentDescription="@string/ImageContentDescription"
+        android:scaleType="fitCenter"
+        android:src="@null" />
+</LinearLayout>

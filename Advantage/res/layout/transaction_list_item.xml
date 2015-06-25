@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/transactionLinearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:background="@null"
+    android:orientation="vertical"
+    android:paddingLeft="6dp"
+    android:paddingRight="5dp">
+
+    <ImageView
+        android:id="@+id/transactionHeaderPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_header_repeat"
+        android:contentDescription="@string/ImageContentDescription"
+        android:scaleType="fitCenter"
+        android:src="@null" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_repeat">
+
+        <ImageView
+            android:id="@+id/transactionImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="4dp"
+            android:contentDescription="@string/ImageContentDescription"
+            android:scaleType="fitStart" />
+
+        <TextView
+            android:id="@+id/transactionNameTextView"
+            style="@style/ShadowTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/transactionImageView"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:scrollHorizontally="false" />
+
+
+        <TextView
+            android:id="@+id/transactionDateTextView"
+            style="@style/ShadowTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/transactionImageView"
+            android:layout_below="@+id/transactionNameTextView"
+            android:layout_toLeftOf="@+id/transactionDateTextView"
+            android:layout_margin="4dp"
+            android:scrollHorizontally="false" />
+
+        <TextView
+            android:id="@+id/transactionBalanceTextView"
+            style="@style/ShadowTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transactionNameTextView"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:scrollHorizontally="false" />
+
+        <LinearLayout
+            android:id="@+id/transactionFooterSpacer"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_below="@+id/transactionBalanceTextView"
+            android:background="@null"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/transactionFooterPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_bg_footer"
+        android:contentDescription="@string/ImageContentDescription"
+        android:scaleType="fitCenter"
+        android:src="@null" />
+</LinearLayout>
