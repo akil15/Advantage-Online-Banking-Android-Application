@@ -1,6 +1,6 @@
 package com.hp.advantage.activities;
 
-//Akil Dev
+
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.FragmentManager;
