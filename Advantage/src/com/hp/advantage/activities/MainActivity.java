@@ -1,6 +1,6 @@
 package com.hp.advantage.activities;
 
-
+//Implementing requirement #22: login acitivity
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.FragmentManager;
