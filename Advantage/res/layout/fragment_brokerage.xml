@@ -61,6 +61,7 @@
             android:layout_width="match_parent"
             android:layout_marginTop="10dp"
             android:text="@string/quotes" />
+            
     </LinearLayout>
 
     <ListView
@@ -111,5 +112,16 @@
         android:contentDescription="@string/ImageContentDescription"
         android:scaleType="fitXY"
         android:src="@drawable/header_footer" />
+
+    <Button
+        android:id="@+id/BuyStock"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stocksListView"
+        android:layout_alignTop="@+id/brokerageFormLinearLayout"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="148dp"
+        android:text="Buy stock" />
 
 </RelativeLayout>
