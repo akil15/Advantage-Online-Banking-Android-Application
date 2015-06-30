@@ -118,10 +118,10 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/stocksListView"
+        android:layout_alignLeft="@+id/brokerageFormLinearLayout"
         android:layout_alignTop="@+id/brokerageFormLinearLayout"
-        android:layout_marginLeft="83dp"
-        android:layout_marginTop="148dp"
-        android:text="Buy stock" />
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="145dp"
+        android:text="Buy Stock" />
 
 </RelativeLayout>
